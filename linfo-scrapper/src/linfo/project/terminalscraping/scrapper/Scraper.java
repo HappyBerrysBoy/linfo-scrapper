@@ -447,4 +447,16 @@ public class Scraper {
 				+ separator + String.format("%02d", c.get(Calendar.DAY_OF_MONTH));
 	}
 	
+	
+	
+	/**
+	* XML 파일을 위치시켜야하는 위치를 알려준다.
+	*/
+	public void printLocationFilesBe(){
+		try {
+			System.out.println(new File(".").getCanonicalPath() + "/");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 }
