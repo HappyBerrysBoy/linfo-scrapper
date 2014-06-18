@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- site-list.xml -->
+<site-list>
+	<vessel-schedule-list>
+		<site id="BIT">
+			<terminal>BIT</terminal>
+			<name>Busan International Terminals</name>
+			<url>http://www.sbtc.co.kr/ebiz/</url>
+			<encoding>euc-kr</encoding>
+			<param key="code">01</param>
+			<param key="subp">1</param>
+			<param key="txt1">[SYSDATE-1]</param>
+			<param key="txt2">[SYSDATE+14]</param>
+		</site>
+		
+		<site id="BNCT">
+			<terminal>BNCT</terminal>
+			<name>Busan New Container Terminal</name>
+			<url>http://www.bnctkorea.com/infoservice/webpage/vessel/vslScheduleText.jsp</url>
+			<encoding>euc-kr</encoding>
+			<param key="isSearch">Y</param>
+			<param key="page">1</param>
+			<param key="strdStDate">[SYSDATE(-)-1]</param>
+			<param key="strdEdDate">[SYSDATE(-)+14]</param>
+		</site>
+		
+		<site id="DPCT">
+			<terminal>DPCT</terminal>
+			<name>Dongbu Busan Container Terminal</name>
+			<url>http://pus.dpct.co.kr/info/sunsuk/E71W001S.asp</url>
+			<encoding>euc-kr</encoding>
+		</site>
+		
+		<site id="HJNC">
+			<terminal>HJNC</terminal>
+			<name>Hanjin Newport Co.</name>
+			<url>http://esvc.hjnc.co.kr/esvc/berth/BerthAction.do</url>
+			<encoding>euc-kr</encoding>
+			<param key="cmd">BerthScheduleList</param>
+			<param key="menuID">01</param>
+			<param key="subMenuID">1</param>
+			<param key="pgID">01</param>
+			<param key="scPeriod">14</param>
+			<param key="rowPerPage">100</param>
+		</site>
+		
+		<site id="HKTL1">
+			<terminal>HKTL</terminal>
+			<name>Hutchison Korea Terminals</name>
+			<url>https://custom.hktl.com/jsp/T01/sunsuk.jsp</url>
+			<encoding>euc-kr</encoding>
+			<param key="currentPage">1</param>
+			<param key="year">[SYSDATE.YEAR-1]</param>
+			<param key="month">[SYSDATE.MONTH-1]</param>
+			<param key="day">[SYSDATE.DAY_OF_MONTH-1]</param>
+		</site>
+		<site id="HKTL2">
+			<terminal>HKTL</terminal>
+			<name>Hutchison Korea Terminals</name>
+			<url>https://custom.hktl.com/jsp/T01/sunsuk.jsp</url>
+			<encoding>euc-kr</encoding>
+			<param key="currentPage">2</param>
+			<param key="year">[SYSDATE.YEAR-1]</param>
+			<param key="month">[SYSDATE.MONTH-1]</param>
+			<param key="day">[SYSDATE.DAY_OF_MONTH-1]</param>
+		</site>
+		<site id="HKTL3">
+			<terminal>HKTL</terminal>
+			<name>Hutchison Korea Terminals</name>
+			<url>https://custom.hktl.com/jsp/T01/sunsuk.jsp</url>
+			<encoding>euc-kr</encoding>
+			<param key="currentPage">3</param>
+			<param key="year">[SYSDATE.YEAR-1]</param>
+			<param key="month">[SYSDATE.MONTH-1]</param>
+			<param key="day">[SYSDATE.DAY_OF_MONTH-1]</param>
+		</site>
+		
+		<site id="PNC">
+			<terminal>PNC</terminal>
+			<name>Pusan Newport Co. Ltd.</name>
+			<url>http://svc.pncport.com/info/ShipBerthT.pnc</url>
+			<encoding>utf-8</encoding>
+			<param key="STARTDATE">[SYSDATE-1]</param>
+			<param key="ENDDATE">[SYSDATE+14]</param>
+		</site>
+		
+		<site id="PNIT">
+			<terminal>PNIT</terminal>
+			<name>Pusan Newport International Terminal</name>
+			<url>http://www.pnitl.com/infoservice/webpage/vessel/vslScheduleText.jsp</url>
+			<encoding>euc-kr</encoding>
+			<param key="strdStDate">[SYSDATE(-)-1]</param>
+			<param key="strdEdDate">[SYSDATE(-)+14]</param>
+		</site>
+		
+		<site id="HPNT">
+			<terminal>HPNT</terminal>
+			<name>HYUNDAI PUSAN NEW-PORT TERMINAL</name>
+			<url>http://www.hpnt.co.kr/infoservice/vvdchart</url>
+			<encoding>euc-kr</encoding>
+			<param key="FROM_DTE">[SYSDATE(-)-1]</param>
+			<param key="TO_DTE">[SYSDATE(-)+14]</param>
+			<cookie-url>http://www.hpnt.co.kr/infoservice/</cookie-url>
+		</site>
+		
+		<site id="KBCT">
+			<terminal>KBCT</terminal>
+			<name>CJ Korea Express Busan Container Terminal Corp.</name>
+			<url>http://www.kbct.co.kr/Berth_status_text_servlet_sw_kr</url>
+			<encoding>euc-kr</encoding>
+			<param key="v_time">term</param>
+			<param key="ORDER">item2</param>
+			<param key="YEAR1">[SYSDATE.YEAR-1]</param>
+			<param key="MONTH1">[SYSDATE.MONTH-1]</param>
+			<param key="DAY1">[SYSDATE.DAY_OF_MONTH-1]</param>
+			<param key="YEAR2">[SYSDATE.YEAR+14]</param>
+			<param key="MONTH2">[SYSDATE.MONTH+14]</param>
+			<param key="DAY2">[SYSDATE.DAY_OF_MONTH+14]</param>
+			<cookie-url>http://www.kbct.co.kr/content/sw/frame/berth_status_text_frame_sw_kr.jsp?p_id=CONT_CN_KR&amp;search=Y&amp;snb_num=2</cookie-url>
+		</site>
+	</vessel-schedule-list>
+	
+	<container-information-list>
+		<site id = "BIT">
+			<terminal>BIT</terminal>
+			<name>Busan International Terminals</name>
+			<url>http://www.sbtc.co.kr/ebiz/</url>
+			<encoding>euc-kr</encoding>
+			<param key="code">06</param>
+			<param key="subp">6</param>
+			<param key="txt1">{[1]}</param>
+		</site>
+		
+		<site id="BNCT">
+			<terminal>BNCT</terminal>
+			<name>Busan New Container Terminal</name>
+			<url>http://www.bnctkorea.com/infoservice/webpage/general/contInfo.jsp</url>
+			<encoding>euc-kr</encoding>
+			<param key="isSearch">Y</param>
+			<param key="page">1</param>
+			<param key="cntrNo">{[1]}</param>
+		</site>
+		
+		<site id="DPCT">
+			<terminal>DPCT</terminal>
+			<name>Dongbu Busan Container Terminal</name>
+			<url>http://pus.dpct.co.kr/info/data/E71W001C.asp</url>
+			<encoding>euc-kr</encoding>
+			<param key="start">ok</param>
+			<param key="cntr_no">{[1]}</param>
+		</site>
+		
+		<!--  HJNC Flex로 구현됨 -->
+		<site id="HKTL">
+			<terminal>HKTL</terminal>
+			<name>Hutchison Korea Terminals</name>
+			<url>https://custom.hktl.com/jsp/T04/dataio_cntr.jsp</url>
+			<encoding>euc-kr</encoding>
+			<param key="currentPage">1</param>
+			<param key="year">[SYSDATE.YEAR]</param>
+			<param key="langType">k</param>
+			<param key="terminal">HBCTLIB</param>
+			<param key="mainType">T01</param>
+			<param key="subType">03</param>
+			<param key="optType">T</param>
+			<param key="pname">/T04/dataio_cntr.jsp</param>
+			<param key="ctrno">{[1]}</param>
+		</site>
+		
+		<site id="PNC">
+			<terminal>PNC</terminal>
+			<name>Pusan Newport Co. Ltd.</name>
+			<url>http://svc.pncport.com/info/ContainerInfo.pnc</url>
+			<encoding>utf-8</encoding>
+			<param key="POINT">0</param>
+			<param key="CONTNO">{[1]}</param>
+		</site>
+		
+		<site id="PNIT">
+			<terminal>PNIT</terminal>
+			<name>Pusan Newport International Terminal</name>
+			<url>http://www.pnitl.com/infoservice/webpage/general/contInfo.jsp</url>
+			<encoding>euc-kr</encoding>
+			<param key="isSearch">Y</param>
+			<param key="page">1</param>
+			<param key="cntrNo">{[1]}</param>
+		</site>
+		
+		<site id="HPNT">
+			<terminal>HPNT</terminal>
+			<name>HYUNDAI PUSAN NEW-PORT TERMINAL</name>
+			<url>http://www.hpnt.co.kr/infoservice/cntrinfo</url>
+			<encoding>euc-kr</encoding>
+			<param key="CNTR_NO">{[1]}</param>
+			<cookie-url>http://www.hpnt.co.kr/infoservice/</cookie-url>
+		</site>
+		
+		<!-- 
+		POST를 두번 날려야함 아 구찮네
+		<site id="KBCT">
+			<terminal>KBCT</terminal>
+			<name>CJ Korea Express Busan Container Terminal Corp.</name>
+			<url>http://www.kbct.co.kr/content/cg/frame/cntr_frame_cg_kr.jsp?p_id=CONT_CN_KR&snb_num=1&snb_div=service</url>
+			<encoding>euc-kr</encoding>
+			<param key="v_time">term</param>
+			<param key="DAY2">[SYSDATE.DAY_OF_MONTH+14]</param>
+			<cookie-url>http://www.kbct.co.kr/content/sw/frame/berth_status_text_frame_sw_kr.jsp?p_id=CONT_CN_KR&amp;search=Y&amp;snb_num=2</cookie-url>
+		</site>
+		 -->
+	</container-information-list>
+</site-list>

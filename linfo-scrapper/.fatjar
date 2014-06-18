@@ -1,10 +1,10 @@
 #Fat Jar Configuration File
-#Wed Jun 18 11:52:35 KST 2014
+#Wed Jun 18 12:54:26 KST 2014
 onejar.license.required=true
 manifest.classpath=
 manifest.removesigners=true
 onejar.checkbox=false
-jarname=Linfo_Scrapper_fat.jar
+jarname=linfo-scrapper.jar
 manifest.mergeall=true
 manifest.mainclass=
 manifest.file=<createnew>
